@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="lenovo" on="04/25/21||13:33:21" using="Simscape Multibody Link Version 7.0" from="Autodesk Inventor 2019 (Build 230136000, 136)"/>
+<ModelUnits mass="lbmass" length="inch"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="matlab_Robo" uid="matlab_Robo_{767DB491-4F24-4997-0AD9-EEAF9FE295D4}" version="{580A6AF2-9C82-7C39-E98D-5B98CCFAEBE8}">
+<AssemblyFile name="matlab_Robo.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="wheel (scaled):1" uid="wheel (scaled):1" entityUid="wheel (scaled)_{768B0A26-4F43-257B-1FB1-A08A2BCFB1C3}">
+<Transform>
+<Rotation>-1 1.9150723007554165e-15 3.8579451309009971e-15 -6.5684853526458245e-16 0.8090169943749469 -0.58778525229247414 -4.2693358228763715e-15 -0.58778525229247425 -0.80901699437494679</Rotation>
+<Translation>46.89811995449535 -2.6036436985147797 -25.441529786489678</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel (scaled):2" uid="wheel (scaled):2" entityUid="wheel (scaled)_{768B0A26-4F43-257B-1FB1-A08A2BCFB1C3}">
+<Transform>
+<Rotation>1 4.5941295170634555e-15 -3.2644053879836291e-15 0 0.58778525229247414 0.8090169943749469 5.6312653808331213e-15 -0.80901699437494701 0.58778525229247403</Rotation>
+<Translation>19.254232386163608 -2.6036436985147802 -25.441529786489816</Translation>
+</Transform>
+</Instance>
+<Instance name="robo:1" uid="robo:1" entityUid="robo_{EC9EFE01-42F7-1804-2F40-63A590A9CC45}">
+<Transform>
+<Rotation>1 0 1.0580812000042123e-16 0 1 -2.7808281358243432e-16 0 1.1102230246251563e-16 1</Rotation>
+<Translation>23.396606888403511 -6.9054071098969718 -29.339036525713219</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="Rotational:2">
+<BaseFrame>
+<InstancePath>
+<Uid>robo:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-4.9435673656420478e-16 -4.4605769488941568e-15 1 1 3.1476094855309168e-16 4.9435673656420616e-16 -3.147609485530939e-16 1 4.4605769488941568e-15</Rotation>
+<Translation>22.814013066091839 4.3017634113821916 3.8975067392235396</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>wheel (scaled):1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1.4861401089256365e-16 -1.0797439917089919e-16 -1 -0.80901699437494667 0.58778525229247414 -1.8369701987210272e-16 0.58778525229247414 0.80901699437494667 0</Rotation>
+<Translation>0.68750000000000011 3.0998872103417384e-16 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:3">
+<BaseFrame>
+<InstancePath>
+<Uid>robo:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>5.5659180967874435e-15 0 1 -4.0875988274553619e-16 1 0 -1 -4.0875988274553619e-16 5.5659180967874435e-15</Rotation>
+<Translation>-3.4548745022399023 4.3017634113821925 3.8975067392234051</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>wheel (scaled):2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1.4861401089256294e-16 1.0797439917090014e-16 1 -0.80901699437494667 -0.58778525229247403 1.8369701987210272e-16 0.58778525229247403 -0.80901699437494667 0</Rotation>
+<Translation>0.68750000000000011 3.0998872103417384e-16 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="robo" uid="robo_{EC9EFE01-42F7-1804-2F40-63A590A9CC45}" version="{CE18AD20-0811-EEB2-57FA-2561B4B40DD0}">
+<PartFile name="robo.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>12.26170816879789</Mass>
+<CenterOfMass>9.2844638767440486 -9.2456729365306725 -5.2569684326106616</CenterOfMass>
+<Inertia>3010.1877086927602 4057.7249723312207 2470.9646343380823 -106.85743937072669 -41.636216005461876 -37.97486663487647</Inertia>
+</MassProperties>
+<GeometryFile name="robo_ipt_26a30d8b.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel (scaled)" uid="wheel (scaled)_{768B0A26-4F43-257B-1FB1-A08A2BCFB1C3}" version="{1AC3023B-68C3-209F-FEAF-48926973C99D}">
+<ModelUnits mass="gram" length="centimeter"/>
+<PartFile name="wheel (scaled).ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.059374021615238484</Mass>
+<CenterOfMass>-0.11041092211402195 3.3755512623511197e-05 -3.5289954270885036e-05</CenterOfMass>
+<Inertia>0.40763310590316171 0.23915826718256156 0.23916147628685724 -2.6385372039518369e-06 2.683115507954081e-07 -2.1130615396007108e-07</Inertia>
+</MassProperties>
+<GeometryFile name="wheel (scaled)_ipt_56f50021.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.10196078431372549" g="0.10196078431372549" b="0.10196078431372549" a="1"/>
+<Diffuse r="0.10196078431372549" g="0.10196078431372549" b="0.10196078431372549" a="1"/>
+<Specular r="0.031372549019607843" g="0.031372549019607843" b="0.031372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.25</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
